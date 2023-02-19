@@ -14,6 +14,7 @@ import {
   NurseryTitle,
   NurseryText,
   NurseryTextWrapper,
+  NurseryMask
 } from './nurserySlyled';
 
 const Nursery = () => {
@@ -39,6 +40,7 @@ const Nursery = () => {
           transition={{ duration: 0.5, type: 'spring' }}
           ref={ref}
         />
+        <NurseryMask/>
         <NurseryContent
           initial="hidden"
           animate={control}
