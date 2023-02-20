@@ -31,7 +31,7 @@ const Nursery = () => {
 
   return (
     <Container maxWidth="1700px">
-      <NurseryWrapper>
+      <NurseryWrapper >
         <NurseryImg
           image="https://proza.ru/pics/2016/11/23/1463.jpg"
           initial="hidden"

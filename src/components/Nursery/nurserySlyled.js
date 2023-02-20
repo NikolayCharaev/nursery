@@ -5,8 +5,10 @@ export const NurseryWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 300px;
-  margin-bottom: 1500px;
+  margin-top: 230px;
+  position: relative;
+  margin-bottom: 300px;
+
 `;
 
 export const NurseryImg = styled(motion.img)`
@@ -18,7 +20,6 @@ export const NurseryImg = styled(motion.img)`
   border-radius: 20px;
   animation: animate 3s infinite ease;
   margin-right: 150px;
-  position: relative;
   z-index: 1;
 
   @keyframes animate {
@@ -39,13 +40,13 @@ export const NurseryMask = styled.div`
   height: 700px;
   background-color: aquamarine;
   opacity: 0.5;
-  animation: animate 3s infinite ease;
+  animation: animateMask 3s infinite ease;
   position: absolute;
   border-radius: 20px;
   z-index: 0;
-  top: 290px;
-  left: 110px;
-  @keyframes animate {
+  top: 0;
+  left: 0;
+  @keyframes animateMask {
     0% {
       transform: rotate(10deg);
     }

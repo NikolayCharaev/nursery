@@ -27,7 +27,7 @@ const Header = () => {
         } else {
           return 'rgba(0, 0, 0, 0.2)';
         }
-      }} >
+      }}>
       <Container>
         <HeaderElements>
           <HeaderLogo
