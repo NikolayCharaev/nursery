@@ -40,8 +40,8 @@ export const AdvantagesSubtitle = styled(motion.h5)`
   margin-bottom: 20px;
 `;
 
-export const AdvantagesImageTop = styled.div`
-  background-image: url('https://koshka.top/uploads/posts/2021-12/1638771511_1-koshka-top-p-milogo-kotika-v-shapochke-1.jpg');
+export const AdvantagesImageTop = styled(motion.div)`
+  background-image: url(${({bgImage}) => bgImage || ''});
   width: 400px;
   height:400px;
   background-repeat: no-repeat;
@@ -55,4 +55,5 @@ export const AdvantagesTopWrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  margin-top: -220px;
 `

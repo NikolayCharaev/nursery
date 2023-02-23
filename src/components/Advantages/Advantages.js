@@ -31,21 +31,19 @@ const Advantages = () => {
   return (
     <Container>
       <AdvantagesTopWrapper>
-        <AdvantagesImageTop />
+        <AdvantagesImageTop animate={control} variants={animationList.animateImg} bgImage={'https://koshka.top/uploads/posts/2021-12/1638771511_1-koshka-top-p-milogo-kotika-v-shapochke-1.jpg'}/>
         <Title ref={ref} initial="hidden" animate={control} variants={animationList.titleAnimation}>
           Преимущества
         </Title>
       </AdvantagesTopWrapper>
 
-      <AdvantagesWrapper>
+      <AdvantagesWrapper initial='hidden' animate={control} variants={animationList.itemsContainer}>
         {data.map((elem, index) => {
           return (
             <AdvantagesItem
               key={elem.id}
-              initial="hidden"
-              animate={control}
-              variants={animationList.itemsContainer}>
-              <AdvantagesIcon variants={animationList.itemAnimation}>{elem.icon}</AdvantagesIcon>
+              variants={animationList.itemAnimation}>
+              <AdvantagesIcon >{elem.icon}</AdvantagesIcon>
               <AdvantagesTitle>{elem.title}</AdvantagesTitle>
               <AdvantagesSubtitle>{elem.subtitle}</AdvantagesSubtitle>
             </AdvantagesItem>

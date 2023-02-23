@@ -7,6 +7,8 @@ import { animateCard, animateImg, textItemsContainer, textItem } from './Nursery
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+import { AdvantagesImageTop } from '../Advantages/AdvantagesStyles';
+
 import {
   NurseryWrapper,
   NurseryImg,
@@ -14,7 +16,7 @@ import {
   NurseryTitle,
   NurseryText,
   NurseryTextWrapper,
-  NurseryMask
+  NurseryMask,
 } from './nurserySlyled';
 
 const Nursery = () => {
@@ -31,7 +33,7 @@ const Nursery = () => {
 
   return (
     <Container maxWidth="1700px">
-      <NurseryWrapper >
+      <NurseryWrapper>
         <NurseryImg
           image="https://proza.ru/pics/2016/11/23/1463.jpg"
           initial="hidden"
@@ -40,15 +42,14 @@ const Nursery = () => {
           transition={{ duration: 0.5, type: 'spring' }}
           ref={ref}
         />
-        <NurseryMask/>
+        <NurseryMask />
         <NurseryContent
           initial="hidden"
           animate={control}
           ref={ref}
           variants={animateCard}
-          transition={{ duration: 0.5, type: 'tween' }}
-          >
-          <NurseryTitle>О питомнике</NurseryTitle>
+          transition={{ duration: 0.5, type: 'tween' }}>
+          {/* <NurseryTitle>О питомнике</NurseryTitle> */}
           <NurseryTextWrapper animate={control} variants={textItemsContainer} initial="hidden">
             {aboutNursery.map((item, index) => {
               return (
@@ -60,6 +61,14 @@ const Nursery = () => {
           </NurseryTextWrapper>
         </NurseryContent>
       </NurseryWrapper>
+
+      <AdvantagesImageTop
+        animate={control}
+        variants={animateImg}
+        // initial="hidden"
+        bgImage={
+          'https://gisher.org/gallery/oboi-rabochego-stola-a6/sobachka-i10449.jpg'
+        }></AdvantagesImageTop>
     </Container>
   );
 };

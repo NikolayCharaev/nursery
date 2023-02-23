@@ -4,7 +4,7 @@ export const titleAnimation = {
 };
 
 export const itemsContainer = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
     transition: {
@@ -17,4 +17,10 @@ export const itemsContainer = {
 export const itemAnimation = {
   hidden: { y: 20, opacity: 0 },
   visible: { y: 0, opacity: 1 },
+};
+
+
+export const animateImg = {
+  hidden: { x: 120, y: 0, opacity: 1 },
+  visible: { x: 0, y: 0, opacity: 1 },
 };

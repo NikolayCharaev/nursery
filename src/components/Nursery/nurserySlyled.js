@@ -7,7 +7,7 @@ export const NurseryWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 230px;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 
 `;
 
@@ -65,7 +65,7 @@ export const NurseryContent = styled(motion.div)`
   /* width: 40%; */
   width: 600px;
   padding: 10px;
-  max-height: 930px;
+  max-height: 710px;
   overflow: scroll;
   border-radius: 10px;
   margin-right: auto;

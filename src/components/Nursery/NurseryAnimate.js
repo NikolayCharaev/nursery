@@ -4,7 +4,7 @@ export const animateCard = {
 };
 
 export const animateImg = {
-  hidden: { x: 120, y: 100, opacity: 0 },
+  hidden: { x: 120, y: 0, opacity: 1 },
   visible: { x: 0, y: 0, opacity: 1 },
 };
 

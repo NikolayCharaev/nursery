@@ -1,14 +1,17 @@
 export const aboutNursery = [
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, illum consequuntur! Iure deserunt minima perspiciatis vitae asperiores maxime laboriosam cumque. Eos consectetur totam quisquam eum laborum eius culpa ducimus porro dolore veritatis. Pariatur dolorem atque eos ullam aliquid voluptatem officia.',
+    text: 'Добро пожаловать в наш питомник, где мы заботимся о здоровье, комфорте и счастье наших животных. Мы специализируемся на разведении кошек и собак и предлагаем широкий выбор пород, от маленьких той-терьеров до больших датских догов.',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, illum consequuntur! Iure deserunt minima perspiciatis vitae asperiores maxime laboriosam cumque. Eos consectetur totam quisquam eum laborum eius culpa ducimus porro dolore veritatis. Pariatur dolorem atque eos ullam aliquid voluptatem officia.',
+    text: 'В нашем питомнике мы придерживаемся высоких стандартов здоровья и генетики, чтобы гарантировать, что каждый щенок или котенок, который покидает наш питомник, будет здоровым и сильным. Мы убеждены, что правильный уход и воспитание с самого раннего возраста - это ключ к счастливой и здоровой жизни для любой породы.',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, illum consequuntur! Iure deserunt minima perspiciatis vitae asperiores maxime laboriosam cumque. Eos consectetur totam quisquam eum laborum eius culpa ducimus porro dolore veritatis. Pariatur dolorem atque eos ullam aliquid voluptatem officia.',
+    text: 'Мы гордимся тем, что предоставляем нашим клиентам максимальный уровень сервиса, начиная с первого контакта и заканчивая периодическими обновлениями о здоровье и развитии вашего нового члена семьи. Наша команда состоит из опытных заводчиков и ветеринарных специалистов, которые помогут вам выбрать идеального питомца, а также ответят на любые вопросы, которые у вас могут возникнуть.',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, illum consequuntur! Iure deserunt minima perspiciatis vitae asperiores maxime laboriosam cumque. Eos consectetur totam quisquam eum laborum eius culpa ducimus porro dolore veritatis. Pariatur dolorem atque eos ullam aliquid voluptatem officia.',
+    text: 'Мы также предлагаем широкий выбор товаров для вашего нового питомца, начиная с корма высочайшего качества и заканчивая игрушками и аксессуарами. Мы понимаем, что ваше время и деньги ценны, поэтому мы делаем все возможное, чтобы сделать процесс выбора и ухода за вашим животным как можно более комфортным и безопасным.',
+  },
+  {
+    text: 'Мы гордимся тем, что наши животные находятся в заботливых руках и живут долгую и счастливую жизнь в новых домах. Если вы ищете надежного и профессионального питомника, который будет заботиться о вашем новом питомце так же, как и вы, свяжитесь с нами сегодня, и мы с радостью ответим на все ваши вопросы и предоставим вам возможность выбрать идеального питомца для вашей семьи.',
   },
 ];
