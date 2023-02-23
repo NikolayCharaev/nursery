@@ -41,6 +41,7 @@ const Advantages = () => {
         {data.map((elem, index) => {
           return (
             <AdvantagesItem
+            whileHover={{scale: 1.02}}
               key={elem.id}
               variants={animationList.itemAnimation}>
               <AdvantagesIcon >{elem.icon}</AdvantagesIcon>
