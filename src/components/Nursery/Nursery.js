@@ -46,7 +46,8 @@ const Nursery = () => {
           animate={control}
           ref={ref}
           variants={animateCard}
-          transition={{ duration: 0.5, type: 'tween' }}>
+          transition={{ duration: 0.5, type: 'tween' }}
+          >
           <NurseryTitle>О питомнике</NurseryTitle>
           <NurseryTextWrapper animate={control} variants={textItemsContainer} initial="hidden">
             {aboutNursery.map((item, index) => {

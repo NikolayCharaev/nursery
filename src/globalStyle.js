@@ -9,11 +9,12 @@ export const Global = createGlobalStyle`
     }
     body{
         color: white;
-        background-image: url('https://img.freepik.com/free-vector/hand-drawn-international-cat-day-background-with-cat-paws_23-2149454621.jpg?w=2000&t=st=1676818266~exp=1676818866~hmac=263733052903e29ac8d7e54d48d88dc01146710bc49c917115822db9d57bea30');
-        background-position: top center;
+        /* background-image: url('https://img.freepik.com/free-vector/hand-drawn-international-cat-day-background-with-cat-paws_23-2149454621.jpg?w=2000&t=st=1676818266~exp=1676818866~hmac=263733052903e29ac8d7e54d48d88dc01146710bc49c917115822db9d57bea30'); */
+        /* background-position: top center;
         background-attachment: fixed;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
+        background: -webkit-linear-gradient(90deg, #6983b5,#879cc4,#aebcd6);background: linear-gradient(90deg, #6983b5,#879cc4,#aebcd6);
         font-family:sans-serif ;
         font-size: 20px;
         
