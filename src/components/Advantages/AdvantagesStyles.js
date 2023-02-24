@@ -24,7 +24,7 @@ export const AdvantagesItem = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
   border-radius: 10px;
   text-align: left;
   user-select: none;

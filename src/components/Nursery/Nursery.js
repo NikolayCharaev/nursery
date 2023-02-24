@@ -65,7 +65,6 @@ const Nursery = () => {
       <AdvantagesImageTop
         animate={control}
         variants={animateImg}
-        // initial="hidden"
         bgImage={
           'https://gisher.org/gallery/oboi-rabochego-stola-a6/sobachka-i10449.jpg'
         }></AdvantagesImageTop>
