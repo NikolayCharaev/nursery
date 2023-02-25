@@ -24,7 +24,6 @@ const Advantages = () => {
   const visibleBlock = useRef(null);
 
   const { scrollY } = useScroll({ target: visibleBlock });
-  console.log(scrollY);
 
   const [visible, setVisible] = useState(false);
 
@@ -43,7 +42,7 @@ const Advantages = () => {
         <AdvantagesImageTop
           animate={control}
           variants={animationList.animateImg}
-          bgImage={
+          setbg={
             'https://koshka.top/uploads/posts/2021-12/1638771511_1-koshka-top-p-milogo-kotika-v-shapochke-1.jpg'
           }
         />

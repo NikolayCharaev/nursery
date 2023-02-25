@@ -41,7 +41,7 @@ export const AdvantagesSubtitle = styled(motion.h5)`
 `;
 
 export const AdvantagesImageTop = styled(motion.div)`
-  background-image: url(${({bgImage}) => bgImage || ''});
+  background-image: url(${({setbg}) => setbg || ''});
   width: 400px;
   height:400px;
   background-repeat: no-repeat;

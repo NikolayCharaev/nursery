@@ -38,7 +38,7 @@ export const Global = createGlobalStyle`
 export const Container = styled.div`
   max-width: ${({ maxWidth }) => maxWidth || '1400px'};
   height: ${({ height }) => height || ''};
-  background-color: ${({ bgColor }) => bgColor || ''};
+  background-color: ${({ bgcolor }) => bgcolor || ''};
   padding: ${({p}) => p || 0} 15px;
   margin: 0 auto;
 `;

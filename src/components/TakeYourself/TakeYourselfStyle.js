@@ -14,8 +14,8 @@ export const YourselfItem = styled(motion.div)`
   scroll-snap-align: start;
 `;
 
-export const YourselfImage = styled.div`
-  background-image: url(${({ bgImage }) => bgImage || ''});
+export const YourselfImage = styled(motion.div)`
+  background-image: url(${({ bgimage }) => bgimage || ''});
   background-position: top center;
   object-fit: cover;
   background-repeat: no-repeat;

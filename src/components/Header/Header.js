@@ -16,12 +16,11 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    console.log(scroll);
   }, []);
 
   return (
     <HeaderWrapper
-      bgColor={() => {
+      bgcolor={() => {
         if (window.scrollY > 100) {
           return 'rgba(0, 0, 0, 0.8)';
         } else {

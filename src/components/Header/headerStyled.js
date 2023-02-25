@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 
 export const HeaderWrapper = styled(motion.header)`
-  background-color: ${({bgColor }) => bgColor };
+  background-color: ${({bgcolor }) => bgcolor };
   top: 0;
   width: 100%;
   position: fixed;
