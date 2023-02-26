@@ -9,8 +9,8 @@ function App() {
       <Global />
       <Header />
       <Nursery />
-      {/* <Advantages/>
-      <TakeYourself/> */}
+      <Advantages/>
+      <TakeYourself/>
     </>
   );
 }
