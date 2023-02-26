@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Global = createGlobalStyle`
     *{
@@ -39,7 +40,7 @@ export const Container = styled.div`
   max-width: ${({ maxWidth }) => maxWidth || '1400px'};
   height: ${({ height }) => height || ''};
   background-color: ${({ bgcolor }) => bgcolor || ''};
-  padding: ${({p}) => p || 0} 15px;
+  padding: ${({ p }) => p || 0} 15px;
   margin: 0 auto;
 `;
 
@@ -52,4 +53,14 @@ export const Title = styled.h3`
   padding-top: ${({ pt }) => pt || 'auto'};
   border-radius: 10px;
   max-width: 600px;
+`;
+
+export const Button = styled(motion.button)`
+  color: white;
+  padding: 20px 50px;
+  border: none;
+  background-color: ${({ bgcolor }) => bgcolor || ''};
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: auto;
 `;
