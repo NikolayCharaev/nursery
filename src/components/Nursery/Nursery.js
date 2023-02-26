@@ -16,6 +16,7 @@ import {
   NurseryTitle,
   NurseryText,
   NurseryTextWrapper,
+  NurseryImagesWrapper,
   NurseryMask,
 } from './nurserySlyled';
 
@@ -34,15 +35,17 @@ const Nursery = () => {
   return (
     <Container maxWidth="1700px">
       <NurseryWrapper>
-        <NurseryImg
-          image="https://proza.ru/pics/2016/11/23/1463.jpg"
-          initial="hidden"
-          animate={control}
-          variants={animateImg}
-          transition={{ duration: 0.5, type: 'spring' }}
-          ref={ref}
-        />
-        <NurseryMask />
+        <NurseryImagesWrapper>
+          <NurseryImg
+            image="https://proza.ru/pics/2016/11/23/1463.jpg"
+            initial="hidden"
+            animate={control}
+            variants={animateImg}
+            transition={{ duration: 0.5, type: 'spring' }}
+            ref={ref}></NurseryImg>
+          <NurseryMask />
+        </NurseryImagesWrapper>
+
         <NurseryContent
           initial="hidden"
           animate={control}
@@ -60,8 +63,6 @@ const Nursery = () => {
           </NurseryTextWrapper>
         </NurseryContent>
       </NurseryWrapper>
-
-     
     </Container>
   );
 };
