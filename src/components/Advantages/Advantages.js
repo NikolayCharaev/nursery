@@ -8,6 +8,7 @@ import {
   AdvantagesSubtitle,
   AdvantagesImageTop,
   AdvantagesTopWrapper,
+  AdvantagesImagesWrapper,
 } from './AdvantagesStyles';
 
 import { useAnimation, useScroll } from 'framer-motion';
@@ -20,32 +21,36 @@ import { Container, Title } from '../../globalStyle';
 const Advantages = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
-
   const visibleBlock = useRef(null);
-
-  const { scrollY } = useScroll({ target: visibleBlock });
-
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     if (inView) {
       control.start('visible');
+      console.log(inView);
       setVisible(true);
-    }
-    else { 
+    } else {
       control.start('hidden');
     }
   }, [inView, control]);
   return (
     <Container>
       <AdvantagesTopWrapper>
-        <AdvantagesImageTop
-          animate={control}
-          variants={animationList.animateImg}
-          setbg={
-            'https://koshka.top/uploads/posts/2021-12/1638771511_1-koshka-top-p-milogo-kotika-v-shapochke-1.jpg'
-          }
-        />
+        <AdvantagesImagesWrapper>
+          <AdvantagesImageTop
+            animate={control}
+            variants={animationList.animateImgReverse}
+            setbg={
+              'https://gisher.org/gallery/oboi-rabochego-stola-a6/sobachka-i10449.jpg'
+            }/>
+          <AdvantagesImageTop
+            animate={control}
+            variants={animationList.animateImg}
+            setbg={
+              'https://koshka.top/uploads/posts/2021-12/1638771511_1-koshka-top-p-milogo-kotika-v-shapochke-1.jpg'
+            }
+          />
+        </AdvantagesImagesWrapper>
         <Title ref={ref} initial="hidden" animate={control} variants={animationList.titleAnimation}>
           Преимущества
         </Title>

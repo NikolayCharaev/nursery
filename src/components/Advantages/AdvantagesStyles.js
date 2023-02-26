@@ -57,3 +57,12 @@ export const AdvantagesTopWrapper = styled.div`
   justify-content: space-between;
   margin-top: -220px;
 `
+
+export const AdvantagesImagesWrapper = styled(motion.div)`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 100%;
+  margin: 100px 0;
+
+`

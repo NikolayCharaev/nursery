@@ -24,3 +24,9 @@ export const animateImg = {
   hidden: { x: 120, y: 0, opacity: 1 },
   visible: { x: 0, y: 0, opacity: 1 },
 };
+
+
+export const animateImgReverse = {
+  hidden: { x: 0, y: 0, opacity: 1 },
+  visible: { x: 120, y: 100, opacity: 1 },
+};

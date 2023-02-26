@@ -8,7 +8,6 @@ export const NurseryWrapper = styled.div`
   margin-top: 230px;
   position: relative;
   margin-bottom: 200px;
-
 `;
 
 export const NurseryImg = styled(motion.img)`
@@ -62,7 +61,6 @@ export const NurseryMask = styled.div`
 export const NurseryContent = styled(motion.div)`
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  /* width: 40%; */
   width: 600px;
   padding: 10px;
   max-height: 710px;

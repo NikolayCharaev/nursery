@@ -61,12 +61,7 @@ const Nursery = () => {
         </NurseryContent>
       </NurseryWrapper>
 
-      <AdvantagesImageTop
-        animate={control}
-        variants={animateImg}
-        setbg={
-          'https://gisher.org/gallery/oboi-rabochego-stola-a6/sobachka-i10449.jpg'
-        }></AdvantagesImageTop>
+     
     </Container>
   );
 };
