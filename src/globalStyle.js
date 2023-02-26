@@ -11,7 +11,8 @@ export const Global = createGlobalStyle`
    
     body{
         color: white;
-        background: -webkit-linear-gradient(90deg, #6983b5,#879cc4,#aebcd6);background: linear-gradient(90deg, #6983b5,#879cc4,#aebcd6);
+        background: -webkit-linear-gradient(90deg, #ae5fab,#9c55a5,#894ba0,#75429a,#5f3a94);
+        background: linear-gradient(90deg, #ae5fab,#9c55a5,#894ba0,#75429a,#5f3a94);
         font-family:sans-serif ;
         font-size: 20px;
         
