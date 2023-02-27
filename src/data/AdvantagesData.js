@@ -3,7 +3,10 @@ import { FaChalkboardTeacher } from 'react-icons/fa'; // кинолог-учит
 import { AiFillMedicineBox, AiFillSafetyCertificate } from 'react-icons/ai'; // 1 доктор,медицина 2 безопасность питомца
 import { BiGame, BiHappyAlt } from 'react-icons/bi'; // 1 игры питомцев 2 хорошее настроение питомца
 
-const iconStyle = (Icon) => <Icon size="3rem" color="#fff" />;
+
+import { iconSize } from '../components/Advantages/AdvantagesStyles';
+
+const iconStyle = (Icon) => <Icon size={`${iconSize}rem`} color="#fff" />;
 
 export const data = [
   {

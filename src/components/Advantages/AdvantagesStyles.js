@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { motion } from 'framer-motion';
+export let iconSize = 3
 
 export const AdvantagesWrapper = styled(motion.div)`
   margin-top: 80px;
@@ -14,6 +15,10 @@ export const AdvantagesWrapper = styled(motion.div)`
   }
 
   @media screen and (max-width: 569px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 374px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
@@ -28,9 +33,23 @@ export const AdvantagesItem = styled(motion.div)`
   border-radius: 10px;
   text-align: left;
   user-select: none;
+
+
+  @media screen and (max-width: 569px) {
+    padding: 50px;
+  }
+  @media screen and (max-width: 482px) {
+    padding: 30px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
 `;
 
-export const AdvantagesIcon = styled(motion.div)``;
+export const AdvantagesIcon = styled(motion.div)`
+  @media screen and (max-width: 482px) {
+    ${iconSize = 2}
+  }
+`;
 
 export const AdvantagesTitle = styled(motion.h4)`
   margin-bottom: 20px;
@@ -59,18 +78,24 @@ export const AdvantagesImageTop = styled(motion.div)`
     height: 250px;
   }
 
-
   @media screen and (max-width: 565px) {
     width: 200px;
     height: 200px;
   }
 
-
   @media screen and (max-width: 451px) {
-   max-width: 400px;
-    min-height: 400px;
+    max-width: 200px;
+    max-height: 200px;
 
-    width: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
+  }
+
+  @media screen and (max-width: 429px) {
+    max-width: 150px;
+    max-height: 150px;
+
+    /* width: 100%; */
     /* height: 100%; */
   }
 `;
@@ -106,10 +131,12 @@ export const AdvantagesImagesWrapper = styled(motion.div)`
     flex-wrap: wrap;
   }
 
-  @media screen and (max-width: 451px) {
-    /* max-height: 500px; */
-    flex-direction: column;
-    align-items: center;
-    gap: 180px;
+  @media screen and (max-width: 480px) {
+    max-width: 500px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    margin: 150px 0;
   }
+
 `;

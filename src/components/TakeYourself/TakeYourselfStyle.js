@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled ,{css}from 'styled-components';
 import { motion } from 'framer-motion';
 
 import Slider from 'react-slick';
@@ -14,7 +14,18 @@ export const settings = {
 export const YourselfWrapper = styled.div`
   margin-top: 50px;
   margin-bottom: 100px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 1475px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 977px) {
+    font-size: 15px;
+  }
 `;
 
 export const YourselfItem = styled.div`
@@ -52,13 +63,23 @@ export const YourselfContent = styled.div`
   }
 `;
 
+const defaultStyled = css`
+  height: 0;
+  margin-bottom: 25px;
+`
+
 export const PetName = styled.p`
   text-align: center;
+  ${defaultStyled}
+
 `;
 
-export const PetEyesColor = styled.p``;
+export const PetEyesColor = styled.p`
+  ${defaultStyled}
+`;
 export const PetWoolType = styled.p`
-  margin-bottom: 40px;
+  ${defaultStyled}
+  margin-bottom: 140px;
 `;
 
 export const PetText = styled.p`
@@ -81,21 +102,10 @@ export const YourselfBanner = styled.div`
   align-items: center;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 1475px) {
+    max-width: 860px;
+    margin-left: 0px;
+  } 
 `;
 
-export const DogImage = styled.img`
-  position: absolute;
-  background-image: url(${({ bgimage }) => bgimage || ''});
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  z-index: 2;
-`;
-
-export const CatImage = styled.img`
-  ${DogImage}
-  bottom: 0;
-  right: 0;
-`;

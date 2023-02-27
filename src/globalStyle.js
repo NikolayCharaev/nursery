@@ -35,6 +35,8 @@ export const Global = createGlobalStyle`
         color: inherit;
     }
 
+ 
+
 `;
 
 export const Container = styled.div`
