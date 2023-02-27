@@ -71,4 +71,10 @@ export const Button = styled(motion.button)`
   border-radius: 10px;
   cursor: pointer;
   margin-top: auto;
+
+
+  
+  @media screen and (max-width: 564px) {
+    padding: 10px 30px;
+  }
 `;

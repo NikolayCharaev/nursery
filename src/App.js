@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Nursery />
       <Advantages />
-      {/* <TakeYourself/> */}
+      <TakeYourself/>
     </>
   );
 }
