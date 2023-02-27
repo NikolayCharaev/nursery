@@ -9,6 +9,15 @@ export const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+
+  responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+          arrows: false
+        }
+      }
+  ]
 };
 
 export const YourselfWrapper = styled.div`
@@ -40,6 +49,11 @@ export const YourselfItem = styled.div`
 
   @media screen and (max-width: 714px) {
     /* grid-template-columns: repeat(1, 1fr); */
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 564px) {
+    padding: 10px 5px;
   }
 `;
 
