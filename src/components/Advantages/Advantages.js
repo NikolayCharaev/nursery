@@ -11,7 +11,7 @@ import {
   AdvantagesImagesWrapper,
 } from './AdvantagesStyles';
 
-import { useAnimation, useScroll } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import * as animationList from './AdvantagesAnimation';
