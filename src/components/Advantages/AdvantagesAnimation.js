@@ -30,3 +30,14 @@ export const animateImgReverse = {
   hidden: { x: 0, y: 0, opacity: 1 },
   visible: { x: 120, y: 100, opacity: 1 },
 };
+
+export const animateImgMini = {
+  hidden: { x: 0, y: 100, opacity: 1 },
+  visible: { x: 0, y: 0, opacity: 1 },
+};
+
+
+export const animateImgReverseMini = {
+  hidden: { x: 0, y: 0, opacity: 1 },
+  visible: { x: 0, y: 100, opacity: 1 },
+};

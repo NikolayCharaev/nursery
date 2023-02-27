@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { aboutNursery } from '../../data/NurseryData';
 import { Container } from '../../globalStyle';
 
-import { animateCard, animateImg, textItemsContainer, textItem } from './NurseryAnimate';
+import { animateCard, animateImg, textItemsContainer, textItem, animateCardMini } from './NurseryAnimate';
 
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -23,6 +23,9 @@ import {
 const Nursery = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
+
+
+  const x = window.innerWidth
 
   useEffect(() => {
     if (inView) {
@@ -50,7 +53,7 @@ const Nursery = () => {
           initial="hidden"
           animate={control}
           ref={ref}
-          variants={animateCard}
+          variants={x > 838 ? animateCard : animateCardMini}
           transition={{ duration: 0.5, type: 'tween' }}>
           <NurseryTextWrapper animate={control} variants={textItemsContainer} initial="hidden">
             {aboutNursery.map((item, index) => {

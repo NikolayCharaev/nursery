@@ -12,10 +12,9 @@ export const NurseryWrapper = styled.div`
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 50px;
-  }
-  @media screen and (max-width: 624px) {
     margin-top: 130px;
   }
+
 `;
 
 export const NurseryImagesWrapper = styled.div`
@@ -106,7 +105,7 @@ export const NurseryMask = styled.div`
 export const NurseryContent = styled(motion.div)`
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  width: 600px;
+  max-width: 600px;
   padding: 10px;
   max-height: 710px;
   overflow: scroll;

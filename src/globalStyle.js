@@ -43,6 +43,10 @@ export const Container = styled.div`
   background-color: ${({ bgcolor }) => bgcolor || ''};
   padding: ${({ p }) => p || 0} 15px;
   margin: 0 auto;
+
+  @media screen and (max-width: 791px) {
+      font-size: 15px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -53,7 +57,8 @@ export const Title = styled.h3`
   margin-top: ${({ mt }) => mt || 'auto'};
   padding-top: ${({ pt }) => pt || 'auto'};
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 350px;
+
 `;
 
 export const Button = styled(motion.button)`

@@ -24,6 +24,8 @@ const Advantages = () => {
   const visibleBlock = useRef(null);
   const [visible, setVisible] = useState(false);
 
+  const x = window.innerWidth
+
   useEffect(() => {
     if (inView) {
       control.start('visible');
@@ -39,23 +41,21 @@ const Advantages = () => {
         <AdvantagesImagesWrapper>
           <AdvantagesImageTop
             animate={control}
-            variants={animationList.animateImgReverse}
-            setbg={
-              'https://gisher.org/gallery/oboi-rabochego-stola-a6/sobachka-i10449.jpg'
-            }/>
+            variants={x > 1127 ?  animationList.animateImgReverse : animationList.animateImgReverseMini}
+            setbg={'https://gisher.org/gallery/oboi-rabochego-stola-a6/sobachka-i10449.jpg'}
+          />
           <AdvantagesImageTop
             animate={control}
-            variants={animationList.animateImg}
+            variants={x > 1127 ? animationList.animateImg : animationList.animateImgMini}
             setbg={
               'https://koshka.top/uploads/posts/2021-12/1638771511_1-koshka-top-p-milogo-kotika-v-shapochke-1.jpg'
             }
           />
         </AdvantagesImagesWrapper>
-        <Title ref={ref} initial="hidden" animate={control} variants={animationList.titleAnimation}>
-          Преимущества
-        </Title>
       </AdvantagesTopWrapper>
-
+      <Title ref={ref} initial="hidden" animate={control} variants={animationList.titleAnimation}>
+        Преимущества
+      </Title>
       <AdvantagesWrapper
         animate={visible ? '' : control}
         variants={animationList.itemsContainer}
