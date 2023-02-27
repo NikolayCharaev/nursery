@@ -11,13 +11,13 @@ export const settings = {
   slidesToScroll: 1,
 
   responsive: [
-      {
-        breakpoint: 500,
-        settings: {
-          arrows: false
-        }
-      }
-  ]
+    {
+      breakpoint: 500,
+      settings: {
+        arrows: false,
+      },
+    },
+  ],
 };
 
 export const YourselfWrapper = styled.div`
@@ -37,6 +37,11 @@ export const YourselfWrapper = styled.div`
 
   @media screen and (max-width: 977px) {
     /* font-size: 15px; */
+  }
+  @media screen and (max-width: 564px) {
+    .slick-dots {
+      max-width: 90% !important;
+    }
   }
 `;
 
