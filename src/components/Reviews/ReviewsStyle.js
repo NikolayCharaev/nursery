@@ -11,8 +11,16 @@ export const ReviewsWrapper = styled.div`
 
   overflow: scroll;
 
-  @media screen and (max-width: 795px) {
+  @media screen and (max-width: 998px) {
     height: 400px;
+  }
+
+  @media screen and (max-width: 562px) {
+    height: 350px;
+  }
+
+  @media screen and (max-width: 509px) {
+    height: 250px;
   }
 `;
 
@@ -67,6 +75,17 @@ export const ReviewsImage = styled.img`
     width: 250px;
     height: 250px;
   }
+
+
+  @media screen and (max-width: 694px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 509px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 export const ReviewsInfo = styled.div`
@@ -88,6 +107,19 @@ export const ReviewsInfo = styled.div`
     width: 250px;
     height: 250px;
   }
+
+  @media screen and (max-width: 694px) {
+    width: 200px;
+    height: 200px;
+    font-size: 13px;
+  }
+
+
+  @media screen and (max-width: 509px) {
+    width: 150px;
+    height: 150px;
+    font-size: 10px;
+  }
 `;
 
 export const ReviewsContent = styled(motion.div)`
@@ -98,14 +130,52 @@ export const ReviewsContent = styled(motion.div)`
   top: 18%;
   left: 23%;
   gap: 20px;
+
+
+
+  @media screen and (max-width: 998px) {
+    left: 20%;
+  }
+
+  @media screen and (max-width: 998px) {
+    left: 17%;
+  }
+
+  @media screen and (max-width: 562px) {
+    left: 10%;
+  }
+
+  @media screen and (max-width: 509px) {
+    left: 12%;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 509px) {
+    left: 15%;
+  }
+
+  @media screen and (max-width: 423px) {
+    left: 12%;
+  }
+  @media screen and (max-width: 396px) {
+    left: 6%;
+  }
+
 `;
 
 // export const ReviewsImages = styled.div``;
 
 export const HumanName = styled.div`
-  margin: 10px 0 50px;
+  margin: 10px 0 20px;
   font-weight: 700;
   text-align: center;
+
+
+
+  @media screen and (max-width: 694px) {
+    margin-top: 5px;
+   margin-bottom: 10px;
+  }
 `;
 
 export const ReviewText = styled.div`
