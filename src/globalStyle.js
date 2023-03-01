@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, useTransform, useScroll } from 'framer-motion';
+
+
 
 export const Global = createGlobalStyle`
     *{

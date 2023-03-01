@@ -25,7 +25,7 @@ function Parallax({ item, index }) {
   return (
     <ReviewsItem key={index} ref={ref} >
       <ReviewBlur bgimage={item.imageUrl} />
-      <ReviewsContent style={{translateY: y}}>
+      <ReviewsContent >
         <ReviewsImage src={item.imageUrl} />
         <ReviewsInfo>
           <HumanName>{item.humanName}</HumanName>

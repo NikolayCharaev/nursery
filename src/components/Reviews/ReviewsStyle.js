@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const ReviewsWrapper = styled.div`
   width: 100%;
-  /* height: 600px; */
+  height: 600px;
   /* height: 80vh; */
   scroll-snap-type: y mandatory;
   margin-bottom: 100px;
