@@ -5,12 +5,15 @@ import { motion } from 'framer-motion';
 export const ReviewsWrapper = styled.div`
   width: 100%;
   height: 600px;
-  /* height: 80vh; */
   scroll-snap-type: y mandatory;
   margin-bottom: 100px;
   border-radius: 10px;
 
   overflow: scroll;
+
+  @media screen and (max-width: 795px) {
+    height: 400px;
+  }
 `;
 
 const bgStyles = css`
@@ -32,13 +35,9 @@ export const ReviewsItem = styled.div`
   scroll-snap-align: center;
   width: 100%;
   height: 100%;
-  /* height: 600px; */
-
   margin-bottom: 20px;
   position: relative;
-
   overflow: hidden;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,18 +57,16 @@ export const ReviewsImage = styled.img`
   position: relative;
   object-fit: cover;
   border-radius: 10px;
-`;
 
-export const ReviewsContent = styled(motion.div)`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  /* position: relative; */
-  top: 18%;
-  left: 23%;
+  @media screen and (max-width: 1390px) {
+    width: 300px;
+    height: 300px;
+  }
 
-  gap: 20px;
+  @media screen and (max-width: 883px) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 export const ReviewsInfo = styled.div`
@@ -79,16 +76,38 @@ export const ReviewsInfo = styled.div`
   width: 400px;
   height: 400px;
   overflow: scroll;
+
+  @media screen and (max-width: 1390px) {
+    width: 300px;
+    height: 300px;
+
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 883px) {
+    width: 250px;
+    height: 250px;
+  }
+`;
+
+export const ReviewsContent = styled(motion.div)`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 18%;
+  left: 23%;
+  gap: 20px;
 `;
 
 // export const ReviewsImages = styled.div``;
 
 export const HumanName = styled.div`
-    margin: 10px 0 50px;
-    font-weight: 700;
-    text-align: center;
+  margin: 10px 0 50px;
+  font-weight: 700;
+  text-align: center;
 `;
 
 export const ReviewText = styled.div`
-    line-height: 1.3;
+  line-height: 1.3;
 `;
