@@ -61,7 +61,7 @@ export const Title = styled.h3`
   margin-top: ${({ mt }) => mt || 'auto'};
   padding-top: ${({ pt }) => pt || 'auto'};
   border-radius: 10px;
-  max-width: 350px;
+  max-width: ${({maxWidth}) => maxWidth || '350px'};
 
 `;
 
